@@ -1,0 +1,184 @@
+.app {
+  text-align: center;
+  font-family: Arial Black;
+}
+
+.appMain {
+  background-color: #f0efe9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #616473;
+}
+
+.todoList {
+  height: 500px;
+  width: 450px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 6px 6px #dddcd8;
+  position: relative;
+  text-align: center;
+  background-position: left top;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(http://m.imeitou.com/uploads/allimg/2019082417/kdvcr4fyt43.jpg) no-repeat 0% 20%/ cover;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.calDate {
+  flex-direction: row;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.navBtn {
+  background-color: #50e3a4;
+  margin: 10px;
+  font-family: Arial Black;
+  outline: none;
+  transition: .5s;
+}
+
+.navBtn:hover, .navBtn:focus {
+  background-color: #3eac7c;
+}
+
+.date {
+  font-size: 3rem;
+  margin-top: 1vh;
+
+}
+
+.monthYear {
+  font-size: 0.7rem;
+  margin-top: 3vh;
+  margin-left: 7px;
+  margin-right: 3px;
+  margin-bottom: 7px;
+}
+
+.day {
+  margin-left: auto;
+  margin-top: 1vh;
+  margin-right: 3px;
+  margin-bottom: 7px;
+}
+
+.newItem {
+  background-color: #50e3a4;
+  width: 400px;
+  height: 50px;
+  font-size: 2rem;
+  transition: .5s;
+  outline: none;
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+}
+
+.newItem:hover, .newItem:focus {
+  position: absolute;
+  left: 0;
+  width: 450px;
+  height: 50px;
+}
+
+
+.todoItem {
+  list-style: none;
+  display: inline-block;
+  min-width: 18vw;
+  max-width: 18vw;
+  margin-right: 2rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.doneItem {
+  list-style: none;
+  display: inline-block;
+  min-width: 18vw;
+  max-width: 18vw;
+  margin-right: 2rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  text-decoration: line-through;
+}
+
+.notDone {
+  display: inline-block;
+  box-shadow: 0 0 0 3px #50e3a4;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 2.5rem;
+  border: none;
+}
+
+.done {
+  display: inline-block;
+  box-shadow: 0 0 0 5px #50e3a4;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 2.5rem;
+  background-color: #50e3a4;
+  border: none;
+}
+
+.delete {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0rem;
+  margin-left: 1rem;
+  border: none;
+}
+
+.input {
+  font-family: Arial Black;
+  padding: .5rem;
+  font-size: 1rem;
+  outline-color :#50e3a4;
+}
+
+.inputBtn {
+  background-color: #50e3a4;
+  border: none;
+  font-family: Arial Black;
+  margin: .5rem;
+  padding: .5rem;
+  font-size: 1rem;
+}
+
+.inputBtn:hover,  .inputBtn:focus{
+  background-color: #3eac7c;
+}
+
+.item {
+  display: flex;
+}
+
+@media only screen and (max-width: 1200px) {
+  .todoItem {
+    max-width: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .inputBtn {
+    display: block;
+    width: 50vw;
+  }
+  .todoItem {
+    min-width: 40vw;
+    max-width: 40vw;
+  }
+}
